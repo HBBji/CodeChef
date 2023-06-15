@@ -1,0 +1,95 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,k;
+	    cin>>n>>k;
+	    long long M = 1000000007;
+	    long long count=1;
+	    
+	   // long long ans=1;
+	   // int cnt=0;
+	   // for(int i=k ; i>k-n ;i--){
+	   //     if(i!=0){
+    // 	        ans = ans*i;
+    // 	        ans = ans%m;
+    // 	        cnt++;
+    // 	        if(cnt == n){
+    // 	            break;
+    // 	        }
+    // 	    }
+	   // }
+	    
+	   // cout<<ans<<endl;
+	    for(int i=0;i<n;i++)
+        	    {
+        	        if(k>0)
+        	       { 
+        	           count=(k*count)%M;
+        	           k--;
+        	       }
+        	        else
+        	        break;
+        	    }
+	    
+	    
+	    
+	    cout<<count<<endl;
+	    
+	    
+	    
+	    
+	    
+	   // if(k>=n){
+	   //     long long ans=1;
+	   //     //for(int i=1 ; i<=n ; i++)
+	   //     for(int i=k ; i>k-n ; i--){
+	           
+	   //             ans*=i;
+	   //     }
+	   //     ans%=m;
+	   //     cout<<ans<<endl;
+	   // }
+	    
+	   // else{
+    // 	   // if(n%k == 0){
+    // 	   //     int c = n/k;
+    // 	   //     long long ans=0;
+    	        
+    // 	   //     for(int i=1 ; i<c ; i++){
+    // 	   //         ans+=pow(i,c);
+    // 	   //     }
+    // 	   //     ans%=m;
+    // 	   //     cout<<ans<<endl;
+    // 	   // }
+    // 	   // else{
+    // 	   //     int c = n/k +1;
+    // 	   //     int rem = n%k;
+    // 	   //     long long ans=0;
+    // 	   //     for(int i=c ; i>c-rem ; i--){
+    // 	   //         ans+=pow(i,c);
+    // 	   //     }
+    // 	   //     for(int i=c-rem ; i>0 ; i--){
+    // 	   //         ans+=pow(i,c-1);
+    // 	   //     }
+    // 	   //     ans%=m;
+    // 	   //     cout<<ans<<endl;
+    // 	   // }
+    	   
+    // 	   long long ans=1;
+    	   
+    // 	   for(int i=1 ; i<=k ; i++){
+    // 	       ans*=i;
+    // 	        ans%=m;
+    // 	   }
+    // 	   ans%=m;
+    // 	   cout<<ans<<endl;
+	   // }   
+	}
+	return 0;
+}
